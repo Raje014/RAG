@@ -1,5 +1,5 @@
-from .embedding import create_embedding
-from .vector_store import client, COLLECTION_NAME
+from embedding import create_embedding
+from vector_store import client, COLLECTION_NAME
 
 def search_documents(
     question: str,

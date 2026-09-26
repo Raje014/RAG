@@ -5,8 +5,8 @@ from pypdf import PdfReader
 from docx import Document
 from openpyxl import load_workbook
 
-from .embedding import create_embeddings
-from .vector_store import client, COLLECTION_NAME
+from embedding import create_embeddings
+from vector_store import client, COLLECTION_NAME
 
 
 DOCUMENTS_FOLDER = os.path.abspath(

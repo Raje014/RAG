@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 from groq import Groq
 
-from .retriever import search_documents
+from retriever import search_documents
 
 load_dotenv()
 
