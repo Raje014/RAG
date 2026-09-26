@@ -1,0 +1,13 @@
+flask
+flask-cors
+python-dotenv
+groq
+qdrant-client
+sentence-transformers
+pypdf
+langchain
+langchain-community
+langchain-text-splitters
+pandas 
+openpyxl 
+python-docx

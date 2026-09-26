@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Raje_Tech_Solution</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">D</div>
+
+                <div>
+                    <h2>Raje_Tech_Solution</h2>
+                    <span>AI Assistant</span>
+                </div>
+            </div>
+
+
+            <button
+                class="new-chat"
+                onclick="clearChat()"
+            >
+                + New Chat
+            </button>
+
+
+            <div class="sidebar-info">
+
+                <h4>Raje_Tech_Solution</h4>
+
+                <p>
+                    Ask questions about Raje_Tech_Solution and get
+                    AI-powered answers.
+                </p>
+
+            </div>
+
+
+            <div class="sidebar-bottom">
+
+                <span>Powered by</span>
+
+                <strong>Raje_Tech_Solution</strong>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CHAT -->
+
+        <main class="chat-area">
+
+            <!-- HEADER -->
+
+            <header class="chat-header">
+
+                <div class="assistant-info">
+
+                    <div class="assistant-avatar">
+                        AI
+                    </div>
+
+                    <div>
+
+                        <h3>AI Assistant</h3>
+
+                        <span>
+                            <span class="status-dot"></span>
+                            Online
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- MESSAGES -->
+
+            <section
+                id="chatMessages"
+                class="chat-messages"
+            >
+
+                <div class="message assistant">
+
+                    <div class="avatar">
+                        AI
+                    </div>
+
+                    <div class="message-content">
+
+                        <div class="bubble">
+
+                            <p>
+                                Hello! 👋
+                            </p>
+
+                            <p>
+                                I'm your AI assistant.
+                                Ask me anything about the
+                                Raje_Tech_Solution.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- TYPING -->
+
+            <div
+                id="typing"
+                class="typing hidden"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+
+            <!-- INPUT -->
+
+            <div class="input-container">
+
+                <div class="input-box">
+
+                    <textarea
+                        id="questionInput"
+                        placeholder="Ask something about the document..."
+                        rows="1"
+                        onkeydown="handleKey(event)"
+                    ></textarea>
+
+
+                    <button
+                        id="sendButton"
+                        onclick="sendMessage()"
+                    >
+
+                        <span>➤</span>
+
+                    </button>
+
+                </div>
+
+
+                <!-- <p class="input-note">
+                    Answers are generated from the provided documents from Raje_Tech_Solution.
+                </p> -->
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
